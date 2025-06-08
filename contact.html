@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Özgür</title>
+    <title>İletişim | Özgür Eyyupoğlu</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="nav-logo">Özgür Eyüpoğlu</div>
-      <ul class="nav-links">
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="projects.html">Projeler</a></li>
+          <li><a href="contact.html" class="active">İletişim</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button onclick="setLanguage('tr')" class="lang-btn">TR</button>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+        </div>
+      </div>
     </nav>
 
-    <main>
-      <section>
-        <h2>Contact Me</h2>
-        <p>You can reach out to me through the following platforms:</p>
-        <ul>
-          <li>
-            <a href="mailto:eyypozgur@gmail.com" class="btn">Email Me</a>
-          </li>
-          <li>Phone: +90 533 919 09 07</li>
-          <li>
-            LinkedIn:
-            <a href="https://linkedin.com/in/ozgureyyupoglu" target="_blank"
-              >ozgureyyupoglu</a
-            >
-          </li>
-          <li>
-            GitHub:
-            <a href="https://github.com/ozgureyyp" target="_blank"
-              >https://github.com/ozgureyyp</a
-            >
-          </li>
-        </ul>
-      </section>
+    <!-- İÇERİK -->
+    <main class="content">
+      <h2>İletişim</h2>
+
+      <div class="contact-info">
+        <p><strong>📍 Lokasyon:</strong> Gaziantep, Türkiye</p>
+        <p><strong>📞 Telefon:</strong> +90 533 919 09 07</p>
+        <p>
+          <strong>📧 E-posta:</strong>
+          <span class="email">eyypozgur@gmail.com</span>
+        </p>
+        <p>
+          <strong>🔗 LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/ozgureyyupoglu" target="_blank">
+            linkedin.com/in/ozgureyyupoglu
+          </a>
+        </p>
+      </div>
+
+      <a href="mailto:eyypozgur@gmail.com" class="btn primary"
+        >Bana E-posta Gönder</a
+      >
     </main>
+    <footer class="footer">
+      <p>© 2025 Özgür Eyyupoğlu – Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -1,106 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Özgür Eyyupoğlu - Resume</title>
+    <title>Özgür Eyyupoğlu | Bilgi Teknolojileri</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <div class="nav-logo">Özgür Eyyupoğlu</div>
-      <ul class="nav-links">
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="projects.html">Projeler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button onclick="setLanguage('tr')" class="lang-btn">TR</button>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+        </div>
+      </div>
     </nav>
 
+    <!-- ANA KART -->
     <header class="hero">
       <img
         src="Assets/Images/1718254050703.jpeg"
-        alt="Özgür's Photo"
-        class="profile-img"
+        alt="Özgür Eyyupoğlu"
+        class="avatar"
       />
-      <h1>Computer Programming Student</h1>
-      <p>Full stack web & Game Developer | Technology Enthusiast</p>
+      <h1>Özgür Eyyupoğlu</h1>
+
+      <p class="intro">
+        Bilgi teknolojileri alanında kendini geliştiren ve çözüm süreçlerine
+        katkı sağlamayı hedefleyen bir IT çalışanı adayıyım. Yazılım geliştirme,
+        teknik destek ve dijital süreç yönetimi gibi alanlarda öğrenmeye,
+        üretmeye ve sorumluluk almaya hazırım.
+      </p>
+
+      <div class="button-group">
+        <a href="about.html" class="btn primary">Hakkımda</a>
+        <a href="ozgur-eyyupoglu-cv.pdf" class="btn secondary" download
+          >CV'yi İndir</a
+        >
+      </div>
     </header>
 
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I'm Özgür, a 20-year-old student currently studying Computer
-          Programming at Gaziantep University. I'm passionate about software
-          development and constantly improving myself in the field. I enjoy
-          building educational and entertaining projects, solving real-life
-          problems, and collaborating with teams.
-        </p>
-      </section>
+    <footer class="footer">
+      <p>© 2025 Özgür Eyyupoğlu – Tüm hakları saklıdır.</p>
+    </footer>
 
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Programming Languages: JavaScript, C#</li>
-          <li>Web Technologies: HTML, CSS, React</li>
-          <li>Databases: SQL</li>
-          <li>Problem Solving, Analytical Thinking</li>
-          <li>Leadership & Team Collaboration</li>
-          <li>English: B2</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <strong>Planet Escape Game</strong> – A space-themed arcade game
-            where the player navigates a planet through obstacles in a 3D
-            environment. [<em>GitHub link will be added</em>]
-          </li>
-          <li>
-            <strong>Verb-Noun Learning Game</strong> – An educational Unity game
-            for elementary students to match and classify nouns and verbs
-            interactively. [<em>GitHub link will be added</em>]
-          </li>
-          <li>
-            <strong>[More Projects Coming]</strong> – I'm actively working on
-            other projects involving mobile development and interactive UI
-            tools.
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Work Experience</h2>
-        <ul>
-          <li>
-            <strong>Intern – Yetkin Gençler Program</strong> (Feb 2024 – May
-            2024)
-            <ul>
-              <li>
-                Completed a 14-week training on teamwork, innovation, career
-                planning, and participated in a UN SDG-based ideathon project.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Part-Time Technician – Gaziantep University TBMYO</strong>
-            (2024 – Present)
-            <ul>
-              <li>
-                Working part-time in the laboratories at the Vocational School
-                of Technical Sciences. Responsible for technical support,
-                equipment setup, and maintenance of lab environments.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Want to connect?</h2>
-        <a href="contact.html" class="btn">Contact Me</a>
-      </section>
-    </main>
+    <script src="index.js"></script>
   </body>
 </html>

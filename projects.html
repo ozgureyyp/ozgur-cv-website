@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeler | Özgür Eyyupoğlu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="projects.html" class="active">Projeler</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button onclick="setLanguage('tr')" class="lang-btn">TR</button>
+          <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- İÇERİK -->
+    <main class="content">
+      <h2>Projeler</h2>
+
+      <div class="project-card">
+        <h3>Platform/Parkur Oyunu (Unity)</h3>
+        <p>
+          Unity ile geliştirilen bu 3D platform oyunu, oyuncunun engelleri
+          aşarak hedefe ulaşmasını sağlayan zıplama, hareket ve seviye geçiş
+          sistemlerini içeriyor.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>İsim-Fiil Öğretici Oyun (Eğitsel Unity Projesi)</h3>
+        <p>
+          Ortaokul düzeyindeki öğrencilere isim ve fiil ayrımını öğretmeyi
+          amaçlayan bu oyunda, yaprak toplama ve kazanlarla iksir üretimi
+          sistemi üzerinden eğitsel etkileşim sağlanıyor.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>AdBridger – Yapay Zekâ Destekli Reklam Platformu</h3>
+        <p>
+          Firmalar, ajanslar ve içerik üreticileri arasında iş birliği sağlayan,
+          yapay zeka tabanlı reklam eşleştirme sistemi sunan bir platform.
+          Kullanıcı dostu web arayüzü ile geliştirildi.
+        </p>
+        <a
+          href="https://ozgureyyp.github.io/Adb-test/"
+          class="btn secondary"
+          target="_blank"
+          >Web Sitesi</a
+        >
+        <p style="font-size: 0.95rem; color: #666; margin-top: 40px">
+          Not: Diğer projelerin GitHub ve canlı demo bağlantıları en kısa sürede
+          eklenecektir.
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2025 Özgür Eyyupoğlu – Tüm hakları saklıdır.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
