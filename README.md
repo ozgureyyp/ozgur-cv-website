@@ -26,3 +26,26 @@ A modern, bilingual (TR/EN) and responsive personal CV website developed using H
 
 ## 📁 Folder Structure# ozgur-cv-website
 This is a webpage for my resume.
+
+
+----------------------------------------------------------------
+
+## 🇹🇷 Türkçe Açıklama
+
+Bu proje, HTML, CSS ve JavaScript ile geliştirilmiş, Türkçe ve İngilizce dil desteğine sahip, responsive bir kişisel özgeçmiş web sitesidir.
+
+**Özellikler:**
+- Duyarlı tasarım (mobil/tablet/masaüstü uyumlu)
+- Dil seçimi: TR / EN
+- PDF formatında indirilebilir özgeçmiş
+- Hakkımda, İletişim, Projeler gibi bölümler
+- GitHub Pages ile barındırma
+
+**Canlı önizleme için:**  
+🔗 [ozgureyyp.github.io/ozgur-cv-website](https://ozgureyyp.github.io/ozgur-cv-website)
+
+---
+
+## 📄 License
+
+MIT — freely usable with attribution.
